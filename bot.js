@@ -85,7 +85,7 @@ async function sendPi() {
         console.error('❌ Error:', e.response?.data?.extras?.result_codes || e.message || e);
         console.log(`-------------------------------------------------------------------------------------`)
     } finally {
-        setTimeout(sendPi, 999); // Run again after 999 ms
+        setTimeout(sendPi, 400); // Run again after 999 ms
     }
 }
 
